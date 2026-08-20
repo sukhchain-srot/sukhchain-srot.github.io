@@ -1,1617 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Sukhchain Singh - PHP Laravel Developer with 2–3 years of experience building modern, scalable and reliable web applications using PHP, Laravel and Vue.js."
-    >
-
-    <meta
-        name="keywords"
-        content="Sukhchain Singh, PHP Developer, Laravel Developer, Vue.js Developer, Backend Developer, REST API Developer, MySQL Developer"
-    >
-
-    <meta name="author" content="Sukhchain Singh">
-
-    <meta name="theme-color" content="#09090f">
-
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sukhchain Singh | PHP Laravel Developer">
-    <meta
-        property="og:description"
-        content="PHP Laravel Developer with 2–3 years of experience building scalable web applications with Laravel, PHP and Vue.js."
-    >
-    <meta
-        property="og:url"
-        content="https://sukhchain-srot.github.io/"
-    >
-
-    <!--
-        OPTIONAL:
-        Upload an image at:
-        assets/images/og-preview.png
-        Recommended social preview size: 1200x630
-    -->
-    <meta
-        property="og:image"
-        content="https://sukhchain-srot.github.io/assets/images/og-preview.png"
-    >
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta
-        name="twitter:title"
-        content="Sukhchain Singh | PHP Laravel Developer"
-    >
-    <meta
-        name="twitter:description"
-        content="PHP Laravel Developer with 2–3 years of experience building modern web applications."
-    >
-    <meta
-        name="twitter:image"
-        content="https://sukhchain-srot.github.io/assets/images/og-preview.png"
-    >
-
-    <title>Sukhchain Singh | PHP Laravel Developer</title>
-
-    <!--
-        FAVICON PLACEHOLDER
-        Add your favicon later at:
-        assets/images/favicon.svg
-    -->
-    <link
-        rel="icon"
-        href="assets/images/favicon.svg"
-        type="image/svg+xml"
-    >
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sukhchain Singh Srot - PHP Laravel Developer portfolio" />
+  <meta name="theme-color" content="#08111f" />
+  <title>Sukhchain Singh Srot | PHP Laravel Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page-noise" aria-hidden="true"></div>
 
-    <!-- Accessibility: Skip navigation -->
-    <a class="skip-link" href="#main-content">
-        Skip to main content
-    </a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">SS</span>
+        <span class="brand-text">Sukhchain Srot</span>
+      </a>
 
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <!-- =========================
-         HEADER / NAVBAR
-    ========================== -->
-    <header class="site-header" id="site-header">
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="container nav-container">
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
 
-            <a
-                href="#home"
-                class="logo"
-                aria-label="Sukhchain Singh - Home"
-            >
-                <span class="logo-bracket">&lt;</span>
-                SS
-                <span class="logo-bracket">/&gt;</span>
-            </a>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> PHP Laravel Developer</div>
+          <h1>Building reliable backend systems and practical web experiences.</h1>
+          <p class="hero-text">
+            I'm <strong>Sukhchain Singh Srot</strong>, a Laravel developer with 3 years of hands-on experience building REST APIs, business modules and production features using Laravel, MySQL and Vue.js.
+          </p>
 
-            <nav
-                class="desktop-nav"
-                aria-label="Main navigation"
-            >
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
 
-            <div class="nav-actions">
-
-                <a
-                    href="assets/resume.pdf"
-                    class="nav-resume"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open Sukhchain Singh resume"
-                >
-                    Resume
-                </a>
-
-                <button
-                    class="menu-toggle"
-                    id="menu-toggle"
-                    type="button"
-                    aria-label="Open navigation menu"
-                    aria-controls="mobile-nav"
-                    aria-expanded="false"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Based in</span>
+              <span class="meta-value">Mohali, Punjab, India</span>
             </div>
-
+            <div>
+              <span class="meta-label">Experience</span>
+              <span class="meta-value">3 Years</span>
+            </div>
+            <div>
+              <span class="meta-label">Current Company</span>
+              <span class="meta-value">Technaitra IT Solutions</span>
+            </div>
+          </div>
         </div>
 
-
-        <!-- Mobile Menu -->
-        <nav
-            class="mobile-nav"
-            id="mobile-nav"
-            aria-label="Mobile navigation"
-        >
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-            <a
-                href="assets/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Resume
-            </a>
-        </nav>
-
-    </header>
-
-
-
-    <main id="main-content">
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-        <section
-            class="hero section"
-            id="home"
-            aria-labelledby="hero-title"
-        >
-
-            <div class="hero-glow hero-glow-one"></div>
-            <div class="hero-glow hero-glow-two"></div>
-
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-
-                    <div class="status-badge">
-                        <span
-                            class="status-dot"
-                            aria-hidden="true"
-                        ></span>
-
-                        PHP Laravel Developer
-                    </div>
-
-                    <p class="hero-intro">
-                        Hello, I'm
-                    </p>
-
-                    <h1 id="hero-title">
-                        Sukhchain
-                        <span>Singh.</span>
-                    </h1>
-
-                    <h2 class="hero-role">
-                        I build reliable
-                        <span class="gradient-text">
-                            web applications.
-                        </span>
-                    </h2>
-
-                    <p class="hero-description">
-                        2–3 years of experience building modern,
-                        scalable and reliable web applications using
-                        PHP, Laravel and Vue.js.
-                    </p>
-
-                    <div class="hero-actions">
-
-                        <a
-                            href="#projects"
-                            class="btn btn-primary"
-                        >
-                            View My Projects
-
-                            <span aria-hidden="true">→</span>
-                        </a>
-
-                        <a
-                            href="https://github.com/sukhchain-srot"
-                            class="btn btn-secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-
-                            <svg
-                                width="18"
-                                height="18"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.17c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
-                            </svg>
-                        </a>
-
-                        <a
-                            href="assets/resume.pdf"
-                            class="btn btn-ghost"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Download Resume
-
-                            <span aria-hidden="true">↓</span>
-                        </a>
-
-                    </div>
-
-                    <div class="hero-meta">
-
-                        <div class="hero-meta-item">
-                            <strong>2–3</strong>
-                            <span>Years Experience</span>
-                        </div>
-
-                        <div class="hero-divider"></div>
-
-                        <div class="hero-meta-item">
-                            <strong>PHP</strong>
-                            <span>Laravel Development</span>
-                        </div>
-
-                        <div class="hero-divider"></div>
-
-                        <div class="hero-meta-item">
-                            <strong>Vue.js</strong>
-                            <span>Frontend Development</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Developer-style visual, no external image required -->
-                <div
-                    class="hero-visual"
-                    aria-hidden="true"
-                >
-
-                    <div class="code-window">
-
-                        <div class="code-window-header">
-
-                            <div class="window-buttons">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <span class="window-title">
-                                Developer.php
-                            </span>
-
-                        </div>
-
-                        <div class="code-content">
-
-                            <div class="code-line">
-                                <span class="line-number">01</span>
-                                <span>
-                                    <span class="code-purple">&lt;?php</span>
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">02</span>
-                                <span></span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">03</span>
-                                <span>
-                                    <span class="code-purple">class</span>
-                                    <span class="code-blue"> Developer</span>
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">04</span>
-                                <span>{</span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">05</span>
-                                <span class="code-indent">
-                                    <span class="code-purple">public</span>
-                                    <span class="code-blue"> string</span>
-                                    $name =
-                                    <span class="code-green">
-                                        'Sukhchain Singh'
-                                    </span>;
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">06</span>
-                                <span></span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">07</span>
-                                <span class="code-indent">
-                                    <span class="code-purple">public</span>
-                                    array $skills = [
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">08</span>
-                                <span class="code-indent-double">
-                                    <span class="code-green">
-                                        'Laravel'
-                                    </span>,
-                                    <span class="code-green">
-                                        'PHP'
-                                    </span>,
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">09</span>
-                                <span class="code-indent-double">
-                                    <span class="code-green">
-                                        'Vue.js'
-                                    </span>,
-                                    <span class="code-green">
-                                        'MySQL'
-                                    </span>,
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">10</span>
-                                <span class="code-indent">
-                                    ];
-                                </span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">11</span>
-                                <span>}</span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">12</span>
-                                <span></span>
-                            </div>
-
-                            <div class="code-line">
-                                <span class="line-number">13</span>
-                                <span>
-                                    <span class="code-comment">
-                                        // Building reliable software.
-                                    </span>
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="code-status">
-
-                            <span>
-                                <span class="status-check">✓</span>
-                                Ready to build
-                            </span>
-
-                            <span>
-                                Laravel
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="floating-tech floating-tech-laravel">
-                        Laravel
-                    </div>
-
-                    <div class="floating-tech floating-tech-vue">
-                        Vue.js
-                    </div>
-
-                </div>
-
+        <div class="hero-visual reveal">
+          <div class="portrait-shell">
+            <div class="portrait-grid"></div>
+            <img src="assets/profile.png" alt="Sukhchain Singh Srot" class="portrait" />
+            <div class="floating-card card-one">
+              <span class="floating-icon">API</span>
+              <div><strong>REST APIs</strong><small>Laravel backend</small></div>
             </div>
-
-            <a
-                href="#about"
-                class="scroll-indicator"
-                aria-label="Scroll to About section"
-            >
-                <span></span>
-            </a>
-
-        </section>
-
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-        <section
-            class="section section-alt"
-            id="about"
-            aria-labelledby="about-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        01 / About
-                    </p>
-
-                    <h2 id="about-title">
-                        Building solutions that
-                        <span>work and scale.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-text reveal">
-
-                        <p class="about-lead">
-                            I'm a PHP Laravel Developer with 2–3 years
-                            of experience developing modern web
-                            applications with a strong focus on backend
-                            development, APIs and maintainable code.
-                        </p>
-
-                        <p>
-                            My primary work revolves around building
-                            Laravel applications, developing REST APIs,
-                            working with relational databases and
-                            integrating backend functionality with
-                            Vue.js based user interfaces.
-                        </p>
-
-                        <p>
-                            I focus on writing clean, understandable and
-                            maintainable code while approaching
-                            development challenges with practical
-                            problem-solving. I enjoy understanding how
-                            different parts of an application work
-                            together and improving them to create
-                            reliable user experiences.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-highlights reveal">
-
-                        <article class="highlight-card">
-
-                            <div class="highlight-icon">
-                                &lt;/&gt;
-                            </div>
-
-                            <div>
-                                <h3>Backend Development</h3>
-
-                                <p>
-                                    Building structured Laravel
-                                    applications and RESTful backend
-                                    services.
-                                </p>
-                            </div>
-
-                        </article>
-
-
-                        <article class="highlight-card">
-
-                            <div class="highlight-icon">
-                                API
-                            </div>
-
-                            <div>
-                                <h3>API Development</h3>
-
-                                <p>
-                                    Creating clear and reliable APIs for
-                                    frontend and application
-                                    integrations.
-                                </p>
-                            </div>
-
-                        </article>
-
-
-                        <article class="highlight-card">
-
-                            <div class="highlight-icon">
-                                DB
-                            </div>
-
-                            <div>
-                                <h3>Database Development</h3>
-
-                                <p>
-                                    Working with MySQL and application
-                                    data through Laravel.
-                                </p>
-                            </div>
-
-                        </article>
-
-
-                        <article class="highlight-card">
-
-                            <div class="highlight-icon">
-                                UI
-                            </div>
-
-                            <div>
-                                <h3>Frontend Integration</h3>
-
-                                <p>
-                                    Connecting Laravel backends with
-                                    modern Vue.js interfaces.
-                                </p>
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
+            <div class="floating-card card-two">
+              <span class="floating-icon">DB</span>
+              <div><strong>MySQL</strong><small>Data & relations</small></div>
             </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-        <section
-            class="section"
-            id="skills"
-            aria-labelledby="skills-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        02 / Skills
-                    </p>
-
-                    <h2 id="skills-title">
-                        Technologies I
-                        <span>work with.</span>
-                    </h2>
-
-                    <p class="section-description">
-                        My current core development stack for building
-                        backend-driven web applications.
-                    </p>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-
-                    <!-- Backend -->
-                    <article class="skill-category reveal">
-
-                        <div class="skill-category-header">
-
-                            <span class="skill-number">
-                                01
-                            </span>
-
-                            <div>
-                                <p>Core Expertise</p>
-                                <h3>Backend</h3>
-                            </div>
-
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    PHP
-                                </span>
-
-                                <div>
-                                    <strong>PHP</strong>
-                                    <small>
-                                        Backend Development
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    L
-                                </span>
-
-                                <div>
-                                    <strong>Laravel</strong>
-                                    <small>
-                                        Web Applications
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    API
-                                </span>
-
-                                <div>
-                                    <strong>REST API</strong>
-                                    <small>
-                                        API Development
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    SQL
-                                </span>
-
-                                <div>
-                                    <strong>MySQL</strong>
-                                    <small>
-                                        Relational Database
-                                    </small>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Frontend -->
-                    <article class="skill-category reveal">
-
-                        <div class="skill-category-header">
-
-                            <span class="skill-number">
-                                02
-                            </span>
-
-                            <div>
-                                <p>User Interfaces</p>
-                                <h3>Frontend</h3>
-                            </div>
-
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    Vue
-                                </span>
-
-                                <div>
-                                    <strong>Vue.js</strong>
-                                    <small>
-                                        Frontend Development
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    JS
-                                </span>
-
-                                <div>
-                                    <strong>JavaScript</strong>
-                                    <small>
-                                        Web Development
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    H5
-                                </span>
-
-                                <div>
-                                    <strong>HTML5</strong>
-                                    <small>
-                                        Semantic Markup
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    C3
-                                </span>
-
-                                <div>
-                                    <strong>CSS3</strong>
-                                    <small>
-                                        Responsive Styling
-                                    </small>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- Tools -->
-                    <article class="skill-category reveal">
-
-                        <div class="skill-category-header">
-
-                            <span class="skill-number">
-                                03
-                            </span>
-
-                            <div>
-                                <p>Development Workflow</p>
-                                <h3>Tools</h3>
-                            </div>
-
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    Git
-                                </span>
-
-                                <div>
-                                    <strong>Git</strong>
-                                    <small>
-                                        Version Control
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    GH
-                                </span>
-
-                                <div>
-                                    <strong>GitHub</strong>
-                                    <small>
-                                        Code Collaboration
-                                    </small>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <span class="skill-icon">
-                                    API
-                                </span>
-
-                                <div>
-                                    <strong>Postman</strong>
-                                    <small>
-                                        API Testing
-                                    </small>
-                                </div>
-                            </div>
-
-                            <!--
-                                ADD MORE TOOLS ONLY IF YOU
-                                ACTUALLY USE THEM.
-
-                                Example:
-                                Docker
-                                Redis
-                                AWS
-                                Linux
-
-                                Do not add them just for appearance.
-                            -->
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-        <section
-            class="section section-alt"
-            id="experience"
-            aria-labelledby="experience-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="section-label">
-                        03 / Experience
-                    </p>
-
-                    <h2 id="experience-title">
-                        Professional
-                        <span>experience.</span>
-                    </h2>
-
-                    <p class="section-description">
-                        2–3 years of hands-on PHP and Laravel
-                        development experience.
-                    </p>
-
-                </div>
-
-
-                <div class="experience-wrapper reveal">
-
-                    <div class="experience-line"></div>
-
-                    <article class="experience-card">
-
-                        <div class="experience-dot"></div>
-
-                        <div class="experience-top">
-
-                            <div>
-
-                                <!--
-                                    REPLACE:
-                                    Add your real job title here.
-                                    Example only:
-                                    PHP Laravel Developer
-                                -->
-                                <p class="experience-role">
-                                    [Your Job Title]
-                                </p>
-
-                                <!--
-                                    REPLACE:
-                                    Add your actual company name.
-                                -->
-                                <h3>
-                                    [Company Name]
-                                </h3>
-
-                            </div>
-
-                            <!--
-                                REPLACE:
-                                Add actual start/end dates.
-                                Example format:
-                                Jan 2024 — Present
-                            -->
-                            <span class="experience-date">
-                                [Start Date] — [End Date / Present]
-                            </span>
-
-                        </div>
-
-
-                        <div class="experience-description">
-
-                            <p>
-                                Add a concise description of your real
-                                responsibilities and the type of Laravel
-                                applications you worked on.
-                            </p>
-
-                            <!--
-                                IMPORTANT:
-                                Replace these placeholder points only
-                                with responsibilities you actually had.
-                            -->
-                            <ul>
-                                <li>
-                                    [Describe a real Laravel/backend
-                                    responsibility]
-                                </li>
-
-                                <li>
-                                    [Describe a real REST API or database
-                                    responsibility]
-                                </li>
-
-                                <li>
-                                    [Describe a real Vue.js/frontend
-                                    integration responsibility]
-                                </li>
-
-                                <li>
-                                    [Add a real problem you helped solve
-                                    or improvement you made]
-                                </li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="experience-tech">
-
-                            <!--
-                                Keep only technologies actually used
-                                in this particular role.
-                            -->
-                            <span>PHP</span>
-                            <span>Laravel</span>
-                            <span>MySQL</span>
-                            <span>Vue.js</span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!--
-                        IF YOU HAD MULTIPLE JOBS:
-
-                        Copy the entire <article class="experience-card">
-                        block above and replace its details with your
-                        real second job/company information.
-                    -->
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-        <section
-            class="section"
-            id="projects"
-            aria-labelledby="projects-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading projects-heading reveal">
-
-                    <div>
-
-                        <p class="section-label">
-                            04 / Projects
-                        </p>
-
-                        <h2 id="projects-title">
-                            Selected
-                            <span>projects.</span>
-                        </h2>
-
-                    </div>
-
-                    <a
-                        href="https://github.com/sukhchain-srot"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-link"
-                    >
-                        View GitHub
-                        <span aria-hidden="true">↗</span>
-                    </a>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-
-                    <!-- =====================
-                         PROJECT 1
-                    ====================== -->
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <span class="project-number">
-                                01
-                            </span>
-
-                            <span class="project-status">
-                                Editable Project
-                            </span>
-
-                        </div>
-
-                        <!-- REPLACE WITH REAL PROJECT NAME -->
-                        <h3>
-                            Project 1
-                        </h3>
-
-                        <!-- REPLACE WITH REAL DESCRIPTION -->
-                        <p class="project-description">
-                            Add a short professional description
-                            explaining what this project does, who it
-                            was built for and what problem it solves.
-                        </p>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Technologies
-                            </h4>
-
-                            <!--
-                                REPLACE / REMOVE technologies
-                                according to the actual project.
-                            -->
-                            <div class="project-tags">
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Key Features
-                            </h4>
-
-                            <ul class="project-features">
-                                <li>[Real feature #1]</li>
-                                <li>[Real feature #2]</li>
-                                <li>[Real feature #3]</li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                My Role
-                            </h4>
-
-                            <p>
-                                [Describe your actual responsibilities
-                                in this project.]
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <!--
-                                WHEN GITHUB LINK IS AVAILABLE:
-                                Replace this span with:
-
-                                <a
-                                  href="YOUR_PROJECT_GITHUB_URL"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="project-link"
-                                >
-                                  GitHub ↗
-                                </a>
-                            -->
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with project GitHub URL"
-                            >
-                                GitHub [Add URL]
-                            </span>
-
-
-                            <!--
-                                WHEN LIVE DEMO IS AVAILABLE:
-                                Replace this span with:
-
-                                <a
-                                  href="YOUR_LIVE_DEMO_URL"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  class="project-link"
-                                >
-                                  Live Demo ↗
-                                </a>
-                            -->
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with live demo URL"
-                            >
-                                Live Demo [Add URL]
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- =====================
-                         PROJECT 2
-                    ====================== -->
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <span class="project-number">
-                                02
-                            </span>
-
-                            <span class="project-status">
-                                Editable Project
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Project 2
-                        </h3>
-
-                        <p class="project-description">
-                            Add a short professional description
-                            explaining what this project does, who it
-                            was built for and what problem it solves.
-                        </p>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Technologies
-                            </h4>
-
-                            <div class="project-tags">
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Key Features
-                            </h4>
-
-                            <ul class="project-features">
-                                <li>[Real feature #1]</li>
-                                <li>[Real feature #2]</li>
-                                <li>[Real feature #3]</li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                My Role
-                            </h4>
-
-                            <p>
-                                [Describe your actual responsibilities
-                                in this project.]
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with project GitHub URL"
-                            >
-                                GitHub [Add URL]
-                            </span>
-
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with live demo URL"
-                            >
-                                Live Demo [Add URL]
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-
-                    <!-- =====================
-                         PROJECT 3
-                    ====================== -->
-                    <article class="project-card reveal">
-
-                        <div class="project-top">
-
-                            <span class="project-number">
-                                03
-                            </span>
-
-                            <span class="project-status">
-                                Editable Project
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Project 3
-                        </h3>
-
-                        <p class="project-description">
-                            Add a short professional description
-                            explaining what this project does, who it
-                            was built for and what problem it solves.
-                        </p>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Technologies
-                            </h4>
-
-                            <div class="project-tags">
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                                <span>[Technology]</span>
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                Key Features
-                            </h4>
-
-                            <ul class="project-features">
-                                <li>[Real feature #1]</li>
-                                <li>[Real feature #2]</li>
-                                <li>[Real feature #3]</li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="project-section">
-
-                            <h4>
-                                My Role
-                            </h4>
-
-                            <p>
-                                [Describe your actual responsibilities
-                                in this project.]
-                            </p>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with project GitHub URL"
-                            >
-                                GitHub [Add URL]
-                            </span>
-
-                            <span
-                                class="project-link project-link-disabled"
-                                title="Replace with live demo URL"
-                            >
-                                Live Demo [Add URL]
-                            </span>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             RESUME CTA
-        ========================== -->
-        <section class="resume-section">
-
-            <div class="container">
-
-                <div class="resume-card reveal">
-
-                    <div class="resume-decoration"></div>
-
-                    <div>
-
-                        <p class="section-label">
-                            Resume
-                        </p>
-
-                        <h2>
-                            Want a quick overview of my
-                            experience?
-                        </h2>
-
-                        <p>
-                            View my resume for a concise overview of
-                            my development experience, skills and
-                            professional background.
-                        </p>
-
-                    </div>
-
-                    <a
-                        href="assets/resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn btn-primary resume-button"
-                    >
-                        Download Resume
-                        <span aria-hidden="true">↓</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-        <section
-            class="section section-alt contact-section"
-            id="contact"
-            aria-labelledby="contact-title"
-        >
-
-            <div class="container">
-
-                <div class="contact-grid">
-
-                    <div class="contact-content reveal">
-
-                        <p class="section-label">
-                            05 / Contact
-                        </p>
-
-                        <h2 id="contact-title">
-                            Let's build something
-                            <span>useful.</span>
-                        </h2>
-
-                        <p>
-                            I'm open to discussing PHP/Laravel
-                            development opportunities and interesting
-                            web application projects.
-                        </p>
-
-                        <!--
-                            REPLACE:
-                            Change your.email@example.com
-                            to your real professional email.
-                        -->
-                        <a
-                            href="mailto:your.email@example.com"
-                            class="contact-email"
-                        >
-                            your.email@example.com
-                            <span aria-hidden="true">↗</span>
-                        </a>
-
-                    </div>
-
-
-                    <div class="contact-links reveal">
-
-                        <a
-                            href="https://github.com/sukhchain-srot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="contact-card"
-                        >
-
-                            <div>
-                                <span class="contact-card-label">
-                                    GitHub
-                                </span>
-
-                                <strong>
-                                    sukhchain-srot
-                                </strong>
-                            </div>
-
-                            <span class="contact-arrow">
-                                ↗
-                            </span>
-
-                        </a>
-
-
-                        <!--
-                            LINKEDIN PLACEHOLDER
-
-                            Replace href="#" with your actual
-                            LinkedIn profile URL.
-
-                            Example:
-                            https://www.linkedin.com/in/your-profile/
-                        -->
-                        <a
-                            href="#"
-                            class="contact-card placeholder-link"
-                            aria-label="LinkedIn profile placeholder - add your URL"
-                        >
-
-                            <div>
-                                <span class="contact-card-label">
-                                    LinkedIn
-                                </span>
-
-                                <strong>
-                                    [Add LinkedIn Profile]
-                                </strong>
-                            </div>
-
-                            <span class="contact-arrow">
-                                ↗
-                            </span>
-
-                        </a>
-
-
-                        <a
-                            href="assets/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="contact-card"
-                        >
-
-                            <div>
-                                <span class="contact-card-label">
-                                    Resume
-                                </span>
-
-                                <strong>
-                                    View Resume
-                                </strong>
-                            </div>
-
-                            <span class="contact-arrow">
-                                ↓
-                            </span>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="footer">
-
-        <div class="container footer-container">
-
-            <div class="footer-brand">
-
-                <a
-                    href="#home"
-                    class="footer-logo"
-                >
-                    Sukhchain Singh
-                </a>
-
-                <p>
-                    PHP Laravel Developer
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a
-                    href="https://github.com/sukhchain-srot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <!--
-                    REPLACE # WITH YOUR LINKEDIN URL
-                -->
-                <a
-                    href="#"
-                    class="placeholder-link"
-                >
-                    LinkedIn
-                </a>
-
-            </div>
-
-
-            <p class="copyright">
-                © <span id="current-year"></span>
-                Sukhchain Singh. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">About Me</span>
+          <h2>Backend-focused developer with practical product experience.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card about-copy reveal">
+            <p>
+              I work as a PHP Laravel Developer at Technaitra IT Solutions, where I contribute to web applications by creating APIs, fixing bugs, handling role-based permissions, pagination, time-log features and other backend modules.
             </p>
+            <p>
+              My day-to-day work includes Laravel CRUD development using controllers, services, models, migrations, collections and API resources. I also work with MySQL, Postman, GitHub/GitLab workflows and basic Vue.js integration.
+            </p>
+            <p>
+              I have also implemented basic third-party integrations such as payment gateways and social authentication, and I enjoy improving my Laravel backend knowledge through real project work.
+            </p>
+          </article>
 
+          <div class="stats-grid reveal">
+            <div class="stat-card"><strong>3+</strong><span>Years Experience</span></div>
+            <div class="stat-card"><strong>3</strong><span>Business Projects</span></div>
+            <div class="stat-card"><strong>Laravel</strong><span>Primary Stack</span></div>
+            <div class="stat-card"><strong>API</strong><span>Backend Focus</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Experience</span>
+          <h2>Professional journey</h2>
         </div>
 
-    </footer>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2023 — Present</div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>PHP Laravel Developer</h3>
+                  <p class="company">Technaitra IT Solutions</p>
+                </div>
+                <span class="tag">Mohali</span>
+              </div>
+              <ul>
+                <li>Create and maintain Laravel REST APIs for business modules.</li>
+                <li>Work with controllers, service classes, models, migrations, API resources and collections.</li>
+                <li>Implement permissions, pagination, time-log features and role-based workflows.</li>
+                <li>Debug existing functionality and resolve application issues.</li>
+                <li>Use GitHub/GitLab for day-to-day branching, commits, push, pull and code collaboration.</li>
+              </ul>
+            </div>
+          </article>
 
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">First 6 Months</div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Laravel Development Intern</h3>
+                  <p class="company">Technaitra IT Solutions</p>
+                </div>
+                <span class="tag">Training</span>
+              </div>
+              <p>Learned and practiced HTML, CSS, PHP and Laravel fundamentals before moving into production project work.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Selected Projects</span>
+          <h2>Business applications I've contributed to</h2>
+          <p>Project links and client-specific details are kept private due to company confidentiality.</p>
+        </div>
 
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-number">01</div>
+            <div class="project-head">
+              <h3>HR.DesignzIndia</h3>
+              <span class="private-badge">Private</span>
+            </div>
+            <p>An HRM platform used to manage company records, employees, attendance, salary, chat and multiple tenant-based modules.</p>
+            <div class="project-work">
+              <span>API Development</span><span>Bug Fixing</span><span>Permissions</span><span>Pagination</span>
+            </div>
+            <div class="project-stack">Laravel · Vue.js · MySQL</div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-head">
+              <h3>MultiplyMe</h3>
+              <span class="private-badge">Private</span>
+            </div>
+            <p>A training platform where companies create groups, add users and assign training videos across Super Admin, Company and Member dashboards.</p>
+            <div class="project-work">
+              <span>REST APIs</span><span>Role Flows</span><span>Bug Fixing</span><span>Data Handling</span>
+            </div>
+            <div class="project-stack">Laravel · Vue.js · MySQL</div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-head">
+              <h3>Oil App</h3>
+              <span class="private-badge">Private</span>
+            </div>
+            <p>A sales and purchase management system with customer records, invoice generation, employee records and multiple role-based access levels.</p>
+            <div class="project-work">
+              <span>CRUD APIs</span><span>Invoices</span><span>Roles</span><span>Customer Data</span>
+            </div>
+            <div class="project-stack">Laravel · Vue.js · MySQL</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Technical Skills</span>
+          <h2>Tools and technologies I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-group glass-card reveal">
+            <h3>Backend</h3>
+            <div class="skill-list">
+              <span>PHP</span><span>Laravel</span><span>REST APIs</span><span>CRUD</span><span>API Resources</span><span>Collections</span><span>Service Classes</span><span>Migrations</span>
+            </div>
+          </article>
+          <article class="skill-group glass-card reveal">
+            <h3>Frontend</h3>
+            <div class="skill-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vue.js</span>
+            </div>
+          </article>
+          <article class="skill-group glass-card reveal">
+            <h3>Database & Tools</h3>
+            <div class="skill-list">
+              <span>MySQL</span><span>phpMyAdmin</span><span>Postman</span><span>Git</span><span>GitHub</span><span>GitLab</span>
+            </div>
+          </article>
+          <article class="skill-group glass-card reveal">
+            <h3>Practical Experience</h3>
+            <div class="skill-list">
+              <span>Permissions</span><span>Pagination</span><span>Relations</span><span>Payment Gateway</span><span>Social Login</span><span>Bug Fixing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Education</span>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="education-grid">
+          <article class="glass-card education-card reveal">
+            <span class="edu-year">Present</span>
+            <h3>Bachelor of Arts</h3>
+            <p>Punjab University, Chandigarh</p>
+            <small>Currently pursuing</small>
+          </article>
+          <article class="glass-card education-card reveal">
+            <span class="edu-year">2021</span>
+            <h3>Senior Secondary (Arts)</h3>
+            <p>Senior Secondary School, Bakrpur</p>
+          </article>
+          <article class="glass-card education-card reveal">
+            <span class="edu-year">2021</span>
+            <h3>Basic Computer Course</h3>
+            <p>MS Word, MS Excel and computer fundamentals</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="section-kicker">Contact</span>
+          <h2>Let's connect.</h2>
+          <p>For Laravel Developer opportunities, professional discussions or project-related communication, you can reach me through the details below.</p>
+          <div class="language-row"><span>Punjabi</span><span>Hindi</span><span>English</span></div>
+        </div>
+
+        <div class="contact-card glass-card reveal">
+          <a href="mailto:srot44574@gmail.com"><span>Email</span><strong>srot44574@gmail.com</strong></a>
+          <a href="tel:+917627846167"><span>Phone</span><strong>+91 76278 46167</strong></a>
+          <a href="tel:+917527006162"><span>Alternate</span><strong>+91 75270 06162</strong></a>
+          <a href="https://www.linkedin.com/in/sukhchain-srot-b6a26628b" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>View Profile ↗</strong></a>
+          <a href="https://github.com/sukhchain-srot/" target="_blank" rel="noreferrer"><span>GitHub</span><strong>sukhchain-srot ↗</strong></a>
+          <a href="https://www.instagram.com/sukhchainsrot/" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@sukhchainsrot ↗</strong></a>
+          <button class="resume-btn" id="resumeBtn">Download Resume <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sukhchain Singh Srot. Built for the web.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
